@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 	
+ 	<bean class="com.spring.Student" name="student1">
+ 		<property name="name" value="Ram"/>
+ 		<property name="lname" value="Bhagwatwar"/>
+ 		<property name="city" value="Mumbai"/>
+ 	</bean>
+ 	<bean class="com.spring.collection.Emp" name="emp">
+ 		<property name="id">
+ 			<list>
+ 				<value>1</value>
+ 				<value>2</value>
+ 				<value>3</value>
+ 				
+ 			</list>
+ 		</property>
+ 		<property name="name">
+ 			<set>
+ 				<value>Ram</value>
+ 				<value>Omkar</value>
+ 				<value>Ajay</value>
+ 				
+ 			</set>
+ 		</property>
+ 		<property name="profile">
+ 			<map>
+ 				<entry key="dept1" value="SF"></entry>
+ 				<entry key="dept2" value="JE"></entry>
+ 				<entry key="dept3" value="SSF"></entry>
+ 			</map>
+ 		</property>
+ 				<property name="prop">
+ 			<props>
+ 				<prop key="dep1">Cool</prop>
+ 					<prop key="dep2">nice</prop>
+ 						<prop key="dep3">Pretty</prop>
+ 			</props>
+ 				
+ 		</property>
+ 	</bean>
+ </beans>
