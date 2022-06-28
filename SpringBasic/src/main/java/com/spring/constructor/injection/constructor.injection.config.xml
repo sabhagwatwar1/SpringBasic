@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 	 
+ 	 
+ 	 <bean class="com.spring.constructor.injection.Person"  name="per">
+ 	 	<constructor-arg value="Ram"/>
+ 	 	<constructor-arg value="12" type="int"/>
+ 	 	<constructor-arg ref="cer"/>
+ 	 	<constructor-arg>
+ 	 		<list>
+ 	 			<value>Chess</value>
+ 	 			<value>Cricket</value>
+ 	 			<value>Soccer</value>
+ 	 		</list>
+ 	 	</constructor-arg>
+ 	 </bean>
+ 	 <bean class="com.spring.constructor.injection.Certi"  name="cer">
+ 	 	<constructor-arg value="Math"/>
+ 	 	
+ 	 </bean>
+ 	 
+ </beans>
